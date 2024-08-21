@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="flower-animation"></div>
+        <h1 class="animated-banner">EcoConnect</h1>
+    </header>
+    <section class="search-section">
+        <input type="text" placeholder="Enter your location..." class="search-bar">
+    </section>
+    <section class="cards-section">
+        <div class="card">
+            <div class="card-image" style="background-image: url('one.jpg');"></div>
+            <div class="card-content">
+                <h2>Tree Planting</h2>
+                <p>Join local tree planting events and make a difference in your community.</p>
+                <button onclick="addTreePoints(10)">+10 Tree Points</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" style="background-image: url('two.jpg');"></div>
+            <div class="card-content">
+                <h2>Beach Clean-ups</h2>
+                <p>Help clean up our beaches and protect marine life from plastic pollution.</p>
+                <button onclick="addTreePoints(10)">+10 Tree Points</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" style="background-image: url('three.jpg');"></div>
+            <div class="card-content">
+                <h2>Community Gardens</h2>
+                <p>Get involved in local community gardens and grow fresh produce.</p>
+                <button onclick="addTreePoints(10)">+10 Tree Points</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" style="background-image: url('four.jpg');"></div>
+            <div class="card-content">
+                <h2>Recycling Programs</h2>
+                <p>Learn about local recycling programs and how you can participate.</p>
+                <button onclick="addTreePoints(10)">+10 Tree Points</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" style="background-image: url('five.jpg');"></div>
+            <div class="card-content">
+                <h2>Workshops</h2>
+                <p>Attend workshops on sustainable practices and eco-friendly living.</p>
+                <button onclick="addTreePoints(10)">+10 Tree Points</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" style="background-image: url('six.jpg');"></div>
+            <div class="card-content">
+                <h2>Educational Resources</h2>
+                <p>Access a library of articles, guides, and resources on environmental issues.</p>
+                <button onclick="addTreePoints(10)">+10 Tree Points</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" style="background-image: url('seven.jpg');"></div>
+            <div class="card-content">
+                <h2>Urban Farming</h2>
+                <p>Participate in urban farming initiatives to grow food in city spaces.</p>
+                <button onclick="addTreePoints(10)">+10 Tree Points</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" style="background-image: url('eight.jpg');"></div>
+            <div class="card-content">
+                <h2>Solar Energy</h2>
+                <p>Learn about solar energy projects and how to get involved.</p>
+                <button onclick="addTreePoints(10)">+10 Tree Points</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image" style="background-image: url('nine.jpg');"></div>
+            <div class="card-content">
+                <h2>Waste Reduction</h2>
+                <p>Explore ways to reduce waste and promote sustainable living.</p>
+                <button onclick="addTreePoints(10)">+10 Tree Points</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="tree-points-container">
+        <span id="treePoints">Tree Points: 100</span>
+        <button id="redeemButton" onclick="redeemPoints()">Redeem Tree Points</button>
+    </div>
+
+    <section class="stats-section">
+        <div class="stats">
+            <h3>Trees Planted</h3>
+            <p>12</p>
+        </div>
+        <div class="stats">
+            <h3>Beach Clean-Ups</h3>
+            <p>4</p>
+        </div>
+        <div class="stats">
+            <h3>Workshops Attended</h3>
+            <p>5</p>
+        </div>
+    </section>
+
+    <section id="3d-map-section">
+        <div id="3dMap"></div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
